@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Bugguuu❤️</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffe4ec, #ffd1dc);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.7);
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1>❤️Surprise for Bugguuu❤️</h1>
+    <p>Enter the secret word to continue</p>
+
+    <input type="password" id="pwd" placeholder="Only you know this 💖">
+    <br>
+    <button onclick="check()">Enter</button>
+
+    <p id="msg"></p>
+  </div>
+
+  <script>
+    function check() {
+      const password = "Buggu"; // ← CHANGE if you want
+      if (document.getElementById("pwd").value === password) {
+        window.location.href = "BUGGU.html";
+      } else {
+        document.getElementById("msg").innerText = "❌ Nope… only Bugguuu knows ❤️";
+      }
+    }
+  </script>
+
+</body>
+</html>
